@@ -10,15 +10,16 @@ public abstract class Duck {
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
 
-    public Duck(){
+    public Duck() {
 
     }
+
     // 委托给行为类
-    public void performFly(){
+    public void performFly() {
         flyBehavior.fly();
     }
 
-    public void performQuack(){
+    public void performQuack() {
         quackBehavior.quack();
     }
 

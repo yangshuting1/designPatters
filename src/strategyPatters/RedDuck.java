@@ -7,7 +7,7 @@ package strategyPatters;
 public class RedDuck extends Duck {
 
     //重写构造方法，
-    public RedDuck(){
+    public RedDuck() {
         flyBehavior = new CanFly();
         //红头鸭使用Quack类处理呱呱叫。所以当performQuack()被调用时，叫的职责背委托给了Quack对象
         quackBehavior = new NoQuack();
