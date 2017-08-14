@@ -10,4 +10,7 @@ public class GreenDuck extends Duck {
         flyBehavior = new NoFly();
         quackBehavior = new CanQuack();
     }
+    public void display(){
+        System.out.println("I'm a GreenDuck and can fly");
+    }
 }

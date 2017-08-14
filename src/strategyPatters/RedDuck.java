@@ -12,4 +12,30 @@ public class RedDuck extends Duck {
         //红头鸭使用Quack类处理呱呱叫。所以当performQuack()被调用时，叫的职责背委托给了Quack对象
         quackBehavior = new NoQuack();
     }
+
+    @Override
+    public void performFly() {
+        super.performFly();
+    }
+
+    @Override
+    public void performQuack() {
+        super.performQuack();
+    }
+
+    @Override
+    public void display() {
+
+    }
+
+    @Override
+    public void swimming() {
+        super.swimming();
+    }
+
+    @Override
+    public void setFlyBehavior(FlyBehavior fly) {
+        super.setFlyBehavior(fly);
+    }
+
 }

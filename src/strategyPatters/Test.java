@@ -11,5 +11,13 @@ public class Test {
         redDuck.performFly();
         redDuck.performQuack();
 
+        //创建一个模型鸭
+        Duck modelDock = new ModelDuck();
+        modelDock.performFly();
+        //动态的改变鸭子的行为， 不要把行为绑定在鸭子类上
+        modelDock.setFlyBehavior(new FlyRocketPowered());
+        modelDock.performFly();
+
+
     }
 }

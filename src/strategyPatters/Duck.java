@@ -16,11 +16,26 @@ public abstract class Duck {
 
     // 委托给行为类
     public void performFly() {
+       //鸭子对象不直接处理呱呱叫，而是委托给FlyBehavior类
         flyBehavior.fly();
     }
 
     public void performQuack() {
+
         quackBehavior.quack();
+    }
+
+    public abstract void display();
+
+    public void swimming(){
+        System.out.println("All duck float ,even decoys");
+    }
+    //加入两个新方法
+    public void setFlyBehavior(FlyBehavior fly){
+        flyBehavior = fly;
+    }
+    public void setQuackBehavior(QuackBehavior quack){
+        quackBehavior = quack;
     }
 
 
